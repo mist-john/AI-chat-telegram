@@ -1,4 +1,4 @@
-# Bot-Telegram-BeMEAN
+# Bot-Telegram-Chat
 
 ## Commands
 - (Who|What|Where) (is|means) {SEARCH}? 
@@ -47,3 +47,4 @@
 - #insta hashtag // searches the hashtag on Instagram
 - [Code]... ? // Searches Stack Overflow
 - [Github]... ? // Searches GitHub
+
