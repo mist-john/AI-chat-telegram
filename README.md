@@ -1,74 +1,82 @@
-# Bot-Telegram-BeMEAN
+Bot-Telegram-BeMEAN
 
-Bot, para o Telegram, criado pelo Be MEAN.
+Telegram bot created by Be MEAN.
 
-**User: @bemean_oficialbot**
+User: @bemean_oficialbot
 
-A ideia é que ele possa lhe ajudar a achar a informação mais fácil, principalmente em se tratando de **tecnologia**, além disso executa código em JavaScript!!!
+The idea is to help you find information more easily, especially about technology.
+It can also execute JavaScript code!
 
-## Comandos
+Commands
 
-- (Quem|O que|O q|oq|Cadê|Cade) (é|eh|eah|e|significa) {BUSCA}? 
-  - Busca na Wikipedia e no DuckDuckGo e envia o texto
-  - Exemplo: O que é JavaScript?
-  - Exemplo: o que é React.js?
-- Onde (fica|está|é|eh) {BUSCA}?
-  - Busca no Maps e envia a localização
-  - Exemplo: Onde fica Curitiba?
-  - Exemplo: onde fica PUC Consolação São Paulo?
-- Cálculos
-  + Cálculos simples e usando funções do objeto Math do JS
-  - Exemplo: 2 + 3 - 4 * 5 / 1
-  - Exemplo: 2 + Math.pow(2,3) + Math.sqrt(9) + Math.max(1,2,3,4,5,6)
-- Data
-  + Executa funções do objeto Date do JS
-  + Exemplo: Date.now()
-  + Exemplo: var dt = new Date; dt.getFullYear();
-- JS {COMANDO}
-  + Busca o comando no site da [MDN](http://mdn/.io) e retorna a URL
-  + Exemplo: js map
-  + Exemplo: js date
-- GME {String}
-  + Retorna a URL da pergunta a ser pesquisada no Google
-  + Exemplo: gme como se faz café?
-  + Retorno: http://pt-br.lmgtfy.com/?q=como+se+faz+caf%C3%A9%3F
-- {ARRAY}.map({CALLBACK})
-  + Executa o comando map
-  + Exemplo: [1,2,3,4].map( num => num*2 )
-  + Exemplo: [1,2,3,4].map( num => num*Math.sqrt(9) )
-- {ARRAY}.filter({CALLBACK})
-  + Executa o comando filter
-  + Exemplo: [1,2,3,4].filter( num => num%2 )
-  + Exemplo: [1,2,3,4].filter( num => !(num%2) )
-- {ARRAY}.reduce({CALLBACK})
-  + Executa o comando reduce
-  + Exemplo: [1,2,3,4].reduce( (antes, atual) => antes+atual )
-  + Exemplo: [1,2,3,4].reduce( (antes, atual) => antes*atual )
-- regex {REGEX}.test({STRING})
-  + Executa o comando test
-  + Exemplo: regex /bazing/.test('bazinga')
-  + Exemplo: regex /[0-9]/.test('82882')
-}
+(Who|What|Where|Cadê|Cade) (is|means) {SEARCH}?
 
-## Funcionalidades
+Searches Wikipedia and DuckDuckGo and returns text.
 
-- Quem é ...? // Busca na WIkipedia
-- Onde é ...? // Busca no Maps e envia a localização
-- O que é ...? // Busca no Google
-- #twitter hashtag // busca a hashtag no Twitter
-- #insta hashtag // busca a hashtag no Instagram
-- [Code]... ? // Busca no Stackoverflow
-- [Github]... ? // Busca no Github
+Example: What is JavaScript?
 
-### To Do
+Example: What is React.js?
 
-- [Be MEAN] ...? // Adiciona a pergunta na FAQ para q eu, Suissa, responda
-- [Be MEAN FAQ] // Lista as perguntas e respostas da FAQ
-- [Error] // Busca no Stackoverflow
-- [JS]{COMANDO} // Busca em mdn.io/{COMANDO}
-- Integração com a API Luis.ai com tradução automática
+Where (is|located|does {SEARCH} stay)?
 
-## Autores
+Searches on Google Maps and returns the location.
 
-- [rjmunhoz](https://github.com/rjmunhoz)
-- [suissa](https://github.com/suissa)
+Example: Where is Curitiba?
+
+Example: Where is PUC Consolação São Paulo?
+
+Calculations
+
+Performs simple calculations or uses JavaScript Math functions.
+
+Example: 2 + 3 - 4 * 5 / 1
+
+Example: 2 + Math.pow(2,3) + Math.sqrt(9) + Math.max(1,2,3,4,5,6)
+
+Date
+
+Executes functions from JavaScript’s Date object.
+
+Example: Date.now()
+
+Example: var dt = new Date; dt.getFullYear();
+
+GME {String}
+
+Returns a Google search URL.
+
+Example: gme how to make coffee?
+
+Output: http://pt-br.lmgtfy.com/?q=how+to+make+coffee%3F
+
+{ARRAY}.map({CALLBACK})
+
+Executes the JavaScript map method.
+
+Example: [1,2,3,4].map(num => num*2)
+
+Example: [1,2,3,4].map(num => num*Math.sqrt(9))
+
+{ARRAY}.filter({CALLBACK})
+
+Executes the JavaScript filter method.
+
+Example: [1,2,3,4].filter(num => num%2)
+
+Example: [1,2,3,4].filter(num => !(num%2))
+
+{ARRAY}.reduce({CALLBACK})
+
+Executes the JavaScript reduce method.
+
+Example: [1,2,3,4].reduce((prev, curr) => prev+curr)
+
+Example: [1,2,3,4].reduce((prev, curr) => prev*curr)
+
+regex {REGEX}.test({STRING})
+
+Executes a regex test.
+
+Example: regex /bazing/.test('bazinga')
+
+Example: regex /[0-9]/.test('82882')
